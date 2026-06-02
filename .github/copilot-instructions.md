@@ -133,7 +133,7 @@ Usar solo cuando tenga sentido:
 - `pin: true` para fijar un post en la parte superior del home
 - `mermaid: true` si el articulo incluye diagramas Mermaid
 - `math: true` si el articulo incluye formulas matematicas
-- `media_subpath: /assets/img/posts/nombre-del-post/` si un articulo tiene varias imagenes y conviene simplificar rutas
+- `media_subpath: /assets/img/posts/nombre-del-post/` si un articulo tiene varias imagenes y conviene simplificar rutas; cuando se usa, `image.path` en el front matter debe contener solo el nombre de archivo (no la ruta completa), o se duplicará la ruta
 
 ## Reglas para imagenes en Chirpy
 
