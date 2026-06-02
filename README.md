@@ -28,7 +28,7 @@ El sitio esta preparado para desplegarse en GitHub Pages mediante el workflow de
 
 URL prevista de publicacion:
 
-- https://dzafondynamizatic.github.io/mi-bc-copilot-blog/
+- https://danielzafon.github.io/mi-bc-copilot-blog/
 
 ## Contenido
 
