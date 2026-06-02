@@ -37,7 +37,3 @@ Antes de esta mejora, para obtener el saldo acumulado habia que exportar los mov
 - El **trabajo diario de contabilidad**, sin tener que salir de la lista para buscar un acumulado.
 
 Es uno de esos cambios pequeños que tienen un impacto grande en la experiencia diaria del usuario.
-
----
-
-Si conoces otras columnas o funcionalidades recientes de Business Central que han pasado desapercibidas, dejalo en los comentarios o contacta conmigo directamente.
