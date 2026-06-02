@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar de Daniel Zafón</title>
+  <desc id="desc">Avatar con las iniciales DZ sobre un fondo geometrico.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="48" fill="url(#bg)"/>
+  <circle cx="184" cy="58" r="28" fill="#22c55e" fill-opacity="0.85"/>
+  <path d="M38 176c32-52 81-80 146-84-18 18-28 44-30 77H38v7Z" fill="#0b1220" fill-opacity="0.2"/>
+  <path d="M54 60h56c21 0 37 16 37 36s-16 36-37 36H82v48H54V60Zm28 24v24h26c7 0 12-5 12-12s-5-12-12-12H82Z" fill="url(#accent)"/>
+  <path d="M154 60h58v20l-34 76h34v24h-63v-20l34-76h-29V60Z" fill="#f8fafc"/>
+</svg>
