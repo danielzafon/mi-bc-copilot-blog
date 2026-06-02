@@ -5,7 +5,7 @@ categories: [Business Central, Copilot]
 tags: [copilot-studio, directline, api, json, ean, sku, integracion]
 description: Cómo exponer un agente de Copilot Studio por API con Direct Line para completar fichas de producto y devolver datos estructurados en JSON.
 image:
-  path: /assets/img/posts/copilot-studio-directline/crear-conversacion-directline.png
+  path: crear-conversacion-directline.png
   alt: Ejemplo de llamada API para crear una conversación en Direct Line
 media_subpath: /assets/img/posts/copilot-studio-directline/
 ---
