@@ -219,6 +219,30 @@ Ejemplo de prompt:
 - si un post tiene pasos o instrucciones, combinar narrativa breve con listas ordenadas para que sea facil de seguir
 - si un post es mas reflexivo o de experiencia, mantener una estructura limpia sin sobrecargarlo con elementos visuales innecesarios
 
+## Control de calidad Markdown (obligatorio)
+
+Antes de publicar, revisar siempre estos puntos para evitar errores de render en Chirpy/Jekyll:
+
+- los encabezados deben escribirse como `## Titulo` o `### Titulo`, nunca como `**## Titulo**`
+- no dejar caracteres escapados innecesarios: `media_subpath` (no `media\_subpath`), `DIRECT_LINE_SECRET` (no `DIRECT\_LINE\_SECRET`), etc.
+- evitar mezclar estilos de enfasis rotos en captions de imagen; usar formato limpio, por ejemplo `*Texto de la leyenda*`
+- comprobar que el TOC lateral se genera correctamente (senal de que los `##`/`###` estan bien definidos)
+
+## Calidad linguistica y codificacion
+
+- redactar en UTF-8 y conservar tildes y enes en todo el articulo
+- aplicar tildes tambien en `title`, `description`, captions y texto visible
+- evitar publicar versiones con perdida de acentos por copy/paste o codificacion incorrecta
+
+## Rigor tecnico para articulos de API (Direct Line)
+
+En posts sobre Copilot Studio + Direct Line, incluir estas aclaraciones para mayor precision:
+
+- diferenciar pruebas de produccion: en produccion usar token efimero generado en backend y no exponer Direct Line Secret en cliente
+- documentar polling con `watermark` para no reprocesar actividades ya leidas
+- mencionar que existe alternativa a polling mediante `streamUrl` (WebSocket)
+- dejar claro en el flujo que el `token` devuelto al crear conversacion es el que se usa en llamadas posteriores
+
 ## Checklist antes de publicar
 
 - el titulo deja claro el tema y su utilidad
@@ -228,6 +252,10 @@ Ejemplo de prompt:
 - las categorias no exceden dos elementos y los tags estan en minusculas
 - la portada, si existe, usa `image.path` e `image.alt`
 - la tipografia ayuda a leer: encabezados claros, listas utiles y codigo bien formateado
+- los encabezados renderizan correctamente (sin `**## ...**`)
+- no quedan escapes innecesarios (`\`) en front matter, codigo o texto
+- el contenido mantiene tildes y enes (UTF-8)
+- en posts de Direct Line se explica token efimero, `watermark` y opcion `streamUrl`
 - las imagenes cargan con rutas absolutas correctas
 - la fecha es publicable
 - el build local pasa correctamente
