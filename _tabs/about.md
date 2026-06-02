@@ -72,6 +72,8 @@ El objetivo no es teorizar, sino **documentar lo que funciona (y a veces lo que 
 
 Si trabajas con Business Central, lideras proyectos o estas explorando como aplicar IA en tu entorno, probablemente encontraras aqui contenido util.
 
+Tambien puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zafon-huerta-93240999/).
+
 ### Certificaciones
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;align-items:center;justify-items:center;">

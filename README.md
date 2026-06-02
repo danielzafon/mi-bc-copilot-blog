@@ -35,3 +35,7 @@ URL prevista de publicacion:
 - Posts en [_posts](_posts)
 - Paginas en [_tabs](_tabs)
 - Configuracion principal en [_config.yml](_config.yml)
+
+## Guia editorial
+
+- Instrucciones para futuras publicaciones en [.github/copilot-instructions.md](.github/copilot-instructions.md)
