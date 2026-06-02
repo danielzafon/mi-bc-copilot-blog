@@ -1,6 +1,6 @@
 ---
 title: Mi primera publicacion
-date: 2026-06-02 21:00:00 +0200
+date: 2026-06-01 12:00:00 +0200
 categories: [Business Central, Copilot]
 tags: [business-central, copilot, al, productividad]
 description: Primera publicacion del blog con enfoque practico sobre Business Central y Copilot.

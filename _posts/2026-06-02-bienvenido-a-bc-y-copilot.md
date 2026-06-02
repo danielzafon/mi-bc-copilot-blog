@@ -1,6 +1,6 @@
 ---
 title: Bienvenido a BC y Copilot
-date: 2026-06-02 18:00:00 +0200
+date: 2026-06-01 10:00:00 +0200
 categories: [Business Central, Copilot]
 tags: [business-central, copilot, al, productividad]
 description: Presentacion del blog y de los temas que se iran publicando.
