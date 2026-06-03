@@ -4,18 +4,18 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Experiencia practica en Business Central e IA aplicada
+## Experiencia práctica en Business Central e IA aplicada
 
-Soy **Daniel Zafon**, y en este espacio comparto mi experiencia trabajando con **Microsoft Dynamics 365 Business Central, desarrollo AL, gestion de proyectos y aplicacion real de inteligencia artificial**.
+Soy **Daniel Zafon**, y en este espacio comparto mi experiencia trabajando con **Microsoft Dynamics 365 Business Central, desarrollo AL, gestión de proyectos y aplicación real de inteligencia artificial**.
 
 ## Perfil profesional
 
-Llevo **casi 20 anos trabajando con Dynamics NAV (Navision) y Business Central**, participando en proyectos completos: desde el analisis inicial hasta la evolucion continua de las soluciones.
+Llevo **casi 20 años trabajando con Dynamics NAV (Navision) y Business Central**, participando en proyectos completos: desde el análisis inicial hasta la evolución continua de las soluciones.
 
 He trabajado en todo el ciclo:
 
-- analisis y diseno de procesos  
-- desarrollo y arquitectura tecnica  
+- análisis y diseño de procesos  
+- desarrollo y arquitectura técnica  
 - implantaciones y puesta en marcha  
 - integraciones con otros sistemas  
 - mejora continua y mantenimiento evolutivo  
@@ -24,55 +24,55 @@ Desde 2015 formo parte de **DynamizaTIC**, donde sigo trabajando en proyectos re
 
 ## Liderazgo de proyectos
 
-Una parte fundamental de mi trabajo es **liderar proyectos de implantacion, evolucion e integracion sobre Business Central**.
+Una parte fundamental de mi trabajo es **liderar proyectos de implantación, evolución e integración sobre Business Central**.
 
-Mi rol no es solo tecnico: esta centrado en asegurar que los proyectos **avancen, se entiendan y lleguen a produccion en condiciones reales**.
+Mi rol no es solo técnico: está centrado en asegurar que los proyectos **avancen, se entiendan y lleguen a producción en condiciones reales**.
 
 En este contexto trabajo en:
 
-- definicion de alcance y objetivos junto a negocio  
-- toma de decisiones funcionales y tecnicas  
-- coordinacion entre clientes, consultores y equipos de desarrollo  
+- definición de alcance y objetivos junto a negocio  
+- toma de decisiones funcionales y técnicas  
+- coordinación entre clientes, consultores y equipos de desarrollo  
 - seguimiento de avances, riesgos y bloqueos  
-- adaptacion del proyecto a medida que evoluciona la realidad del cliente  
+- adaptación del proyecto a medida que evoluciona la realidad del cliente  
 
-Con el tiempo he aprendido que el valor no esta solo en disenar una buena solucion, sino en **hacer que se entregue y funcione en el dia a dia**.
+Con el tiempo he aprendido que el valor no está solo en diseñar una buena solución, sino en **hacer que se entregue y funcione en el día a día**.
 
-## En que me centro
+## En qué me centro
 
-Mi trabajo siempre ha estado en la interseccion de tres areas:
+Mi trabajo siempre ha estado en la intersección de tres áreas:
 
-- **negocio** -> entender como funcionan realmente las operaciones  
-- **tecnologia** -> disenar y construir soluciones que encajen  
-- **ejecucion** -> llevarlo a produccion y que funcione en el dia a dia  
+- **negocio** -> entender cómo funcionan realmente las operaciones  
+- **tecnología** -> diseñar y construir soluciones que encajen  
+- **ejecución** -> llevarlo a producción y que funcione en el día a día  
 
 ## IA aplicada al trabajo real
 
-En los ultimos anos estoy centrado en integrar **IA en procesos reales**, mas alla de pruebas o demos.
+En los últimos años estoy centrado en integrar **IA en procesos reales**, más allá de pruebas o demos.
 
 Me interesa especialmente:
 
-- como aplicar Copilot y modelos de IA en el dia a dia  
-- como automatizar tareas repetitivas en desarrollo y operaciones  
-- como estructurar casos de uso que realmente aporten valor  
-- como conseguir adopcion dentro de los equipos  
+- cómo aplicar Copilot y modelos de IA en el día a día  
+- cómo automatizar tareas repetitivas en desarrollo y operaciones  
+- cómo estructurar casos de uso que realmente aporten valor  
+- cómo conseguir adopción dentro de los equipos  
 
 ## Sobre este blog
 
-Este blog es una extension de mi trabajo diario.
+Este blog es una extensión de mi trabajo diario.
 
-Aqui comparto:
+Aquí comparto:
 
 - experiencias reales liderando proyectos de Business Central  
-- problemas habituales y como los hemos resuelto  
-- automatizaciones y uso de IA en produccion  
-- aprendizajes sobre desarrollo, gestion y entrega  
+- problemas habituales y cómo los hemos resuelto  
+- automatizaciones y uso de IA en producción  
+- aprendizajes sobre desarrollo, gestión y entrega  
 
 El objetivo no es teorizar, sino **documentar lo que funciona (y a veces lo que no)** para que otros profesionales puedan aprovecharlo.
 
-Si trabajas con Business Central, lideras proyectos o estas explorando como aplicar IA en tu entorno, probablemente encontraras aqui contenido util.
+Si trabajas con Business Central, lideras proyectos o estás explorando cómo aplicar IA en tu entorno, probablemente encontrarás aquí contenido útil.
 
-Tambien puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zafon-huerta-93240999/).
+También puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zafon-huerta-93240999/).
 
 ### Certificaciones
 

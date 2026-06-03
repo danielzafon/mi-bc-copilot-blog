@@ -1,30 +1,30 @@
 ---
-title: Mi primera publicacion
+title: Mi primera publicación
 date: 2029-06-01 12:00:00 +0200
 categories: [Business Central, Copilot]
 tags: [business-central, copilot, al, productividad]
-description: Primera publicacion del blog con enfoque practico sobre Business Central y Copilot.
+description: Primera publicación del blog con enfoque práctico sobre Business Central y Copilot.
 image:
   path: /assets/img/posts/mi-primera-publicacion-cover.svg
-  alt: Portada del articulo Mi primera publicacion
+  alt: Portada del artículo Mi primera publicación
 ---
 
-Esta es mi primera publicacion en el blog.
+Esta es mi primera publicación en el blog.
 
-![Portada del articulo](/assets/img/posts/mi-primera-publicacion-cover.svg)
+![Portada del artículo](/assets/img/posts/mi-primera-publicacion-cover.svg)
 
-En este espacio voy a compartir contenido practico sobre:
+En este espacio voy a compartir contenido práctico sobre:
 
 - desarrollo en AL para Business Central
 - uso de GitHub Copilot en tareas reales
-- automatizacion de procesos de desarrollo
-- buenas practicas para mejorar calidad y velocidad
+- automatización de procesos de desarrollo
+- buenas prácticas para mejorar calidad y velocidad
 
 ## Objetivo del blog
 
-El objetivo es documentar ejemplos concretos, decisiones tecnicas y aprendizajes que puedan aplicarse en proyectos reales.
+El objetivo es documentar ejemplos concretos, decisiones técnicas y aprendizajes que puedan aplicarse en proyectos reales.
 
-## Proximos temas
+## Próximos temas
 
 - patrones de productividad con Copilot en AL
 - estructura de extensiones mantenibles
@@ -32,10 +32,10 @@ El objetivo es documentar ejemplos concretos, decisiones tecnicas y aprendizajes
 
 ## Ejemplo de imagen local
 
-Las imagenes locales del blog se pueden insertar asi:
+Las imágenes locales del blog se pueden insertar así:
 
 ![Avatar del autor](/assets/img/avatar.png)
 
-Si quieres controlar tamano o estilo, puedes usar HTML:
+Si quieres controlar tamaño o estilo, puedes usar HTML:
 
-<img src="/assets/img/posts/mi-primera-publicacion-cover.svg" alt="Portada del articulo" width="800">
+<img src="/assets/img/posts/mi-primera-publicacion-cover.svg" alt="Portada del artículo" width="800">
