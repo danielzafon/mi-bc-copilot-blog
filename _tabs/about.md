@@ -6,7 +6,7 @@ order: 4
 
 ## Experiencia práctica en Business Central e IA aplicada
 
-Soy **Daniel Zafon**, y en este espacio comparto mi experiencia trabajando con **Microsoft Dynamics 365 Business Central, desarrollo AL, gestión de proyectos y aplicación real de inteligencia artificial**.
+Soy **Daniel Zafón**, y en este espacio comparto mi experiencia trabajando con **Microsoft Dynamics 365 Business Central, desarrollo AL, gestión de proyectos y aplicación real de inteligencia artificial**.
 
 ## Perfil profesional
 
