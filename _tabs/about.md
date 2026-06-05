@@ -20,7 +20,7 @@ He trabajado en todo el ciclo:
 - integraciones con otros sistemas  
 - mejora continua y mantenimiento evolutivo  
 
-Desde 2015 formo parte de **DynamizaTIC**, donde sigo trabajando en proyectos reales, con clientes y equipos que enfrentan retos diarios en sus sistemas y procesos.
+Desde 2016 formo parte de **DynamizaTIC**, donde sigo trabajando en proyectos reales, con clientes y equipos que enfrentan retos diarios en sus sistemas y procesos.
 
 ## Liderazgo de proyectos
 
