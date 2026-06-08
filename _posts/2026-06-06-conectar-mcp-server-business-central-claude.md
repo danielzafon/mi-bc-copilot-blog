@@ -5,7 +5,7 @@ categories: [Business Central, IA]
 tags: [business-central, mcp, claude, ia, integracion, entra-id]
 description: Cómo conectar el MCP server de Business Central a Claude Cowork con mcp-remote, incluyendo los errores reales de OAuth y rutas de Windows que no están documentados.
 image:
-  path: /assets/img/posts/bc-mcp-claude/bc-mcp-claude.png
+  path: /assets/img/posts/bc-mcp-claude/bc_mcp_claude_connection_diagram.svg
   alt: Diagrama de conexión entre Business Central y Claude mediante MCP
 ---
 
