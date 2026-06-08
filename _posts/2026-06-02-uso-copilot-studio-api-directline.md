@@ -10,7 +10,7 @@ image:
 media_subpath: /assets/img/posts/copilot-studio-directline/
 ---
 
-Esta semana, un compañero me planteó una necesidad muy concreta en un proyecto interno: completar automáticamente información de producto (descripción, peso, tamaño, volumen y atributos) a partir de su EAN o SKU.
+La semana pasada, un compañero me planteó una necesidad muy concreta en un proyecto interno: completar automáticamente información de producto (descripción, peso, tamaño, volumen y atributos) a partir de su EAN o SKU.
 
 A partir de esa necesidad diseñé un enfoque práctico: crear un agente en Copilot Studio con acceso a Internet, darle instrucciones claras de extracción y normalización, y devolver la respuesta en JSON estructurado para que la aplicación pudiera consumirla sin fricción.
 
