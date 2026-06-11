@@ -6,7 +6,7 @@ tags: [business-central, finanzas, inventario, costes, cierre, configuracion]
 description: Dos novedades de Business Central v28 y v28.2 para controlar qué se puede registrar y cuándo: fórmulas de fecha en los periodos de registro permitidos y una fecha de corte para los costes de inventario.
 image:
   path: /assets/img/posts/portada-rangos-fechas.png
-  alt: Página Config. inventario de Business Central con el campo Fecha de valoración más temprana permitida
+  alt: Configuración contabilidad y Config. inventario de Business Central con los campos de fórmula de fecha y fecha de valoración más temprana permitida
 ---
 
 ## El eterno dolor de cabeza de las fechas de registro
@@ -21,13 +21,12 @@ Hasta ahora, los campos **Permitir registro desde** y **Permitir registro hasta*
 
 La novedad es que ahora puedes escribir una **fórmula de fecha** en lugar de una fecha fija. Business Central evalúa esa fórmula contra la fecha de hoy **cada vez que valida una fecha de registro**, de modo que la ventana permitida se recalcula sola.
 
-Los nuevos campos de fórmula están disponibles en tres sitios:
+Los nuevos campos de fórmula están disponibles en:
 
 - **Configuración de contabilidad** (puede que tengas que pulsar *Mostrar más* para verlos).
 - **Configuración de usuarios**.
-- **Plantillas de diario general**.
 
-El orden de prioridad con el que se evalúan las restricciones es: primero Configuración de usuarios, después Configuración de contabilidad y, por último, la plantilla de diario general (cuando está activado el nombre de libro de diario obligatorio).
+El orden de prioridad con el que se evalúan las restricciones es: primero Configuración de usuarios y después Configuración de contabilidad.
 
 ### El caso más habitual: solo el mes en curso
 
@@ -38,11 +37,14 @@ El escenario que más se repite en proyecto es "que solo se pueda registrar dent
 | Permitir registro desde | `-PM` |
 | Permitir registro hasta | `PM` |
 
+![Página Configuración contabilidad con los campos Permitir registro desde/hasta fórmula de fecha rellenos con -PM y PM](/assets/img/posts/config-contabilidad-formula-fecha.png){: w="1200" h="630" .shadow }
+*Los campos de fórmula de fecha en la Configuración contabilidad: `-PM` y `PM` para limitar el registro al mes en curso.*
+
 Y se acabó el mantenimiento mensual: la ventana se desplaza sola cada vez que cambia el mes.
 
 También puedes mezclar fórmula en un límite y fecha fija en el otro; al escribir una fórmula se borra la fecha fija correspondiente y viceversa.
 
-### Cuidado con la documentación de Learn
+### Cuidado con la documentación de Microsoft Learn
 
 Aquí va el aviso que de verdad te va a ahorrar un rato de frustración:
 
