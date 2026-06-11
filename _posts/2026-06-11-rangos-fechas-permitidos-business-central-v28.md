@@ -5,7 +5,7 @@ categories: [Business Central, Finanzas]
 tags: [business-central, finanzas, inventario, costes, cierre, configuracion]
 description: Dos novedades de Business Central v28 y v28.2 para controlar qué se puede registrar y cuándo: fórmulas de fecha en los periodos de registro permitidos y una fecha de corte para los costes de inventario.
 image:
-  path: /assets/img/posts/config-inventario-fecha-valoracion.png
+  path: /assets/img/posts/portada-rangos-fechas.png
   alt: Página Config. inventario de Business Central con el campo Fecha de valoración más temprana permitida
 ---
 
