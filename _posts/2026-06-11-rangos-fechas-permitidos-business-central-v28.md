@@ -3,7 +3,7 @@ title: Controlar rangos de fechas permitidos en Business Central v28 y v28.2
 date: 2026-06-11 10:00:00 +0200
 categories: [Business Central, Finanzas]
 tags: [business-central, finanzas, inventario, costes, cierre, configuracion]
-description: Dos novedades de Business Central v28 y v28.2 para controlar qué se puede registrar y cuándo: fórmulas de fecha en los periodos de registro permitidos y una fecha de corte para los costes de inventario.
+description: "Dos novedades de Business Central v28 y v28.2 para controlar qué se puede registrar y cuándo: fórmulas de fecha en los periodos de registro permitidos y una fecha de corte para los costes de inventario."
 image:
   path: /assets/img/posts/portada-rangos-fechas.png
   alt: Configuración contabilidad y Config. inventario de Business Central con los campos de fórmula de fecha y fecha de valoración más temprana permitida
