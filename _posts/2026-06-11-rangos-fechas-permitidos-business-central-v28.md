@@ -5,7 +5,7 @@ categories: [Business Central, Finanzas]
 tags: [business-central, finanzas, inventario, costes, cierre, configuracion]
 description: "Dos novedades de Business Central v28 y v28.2 para controlar qué se puede registrar y cuándo: fórmulas de fecha en los periodos de registro permitidos y una fecha de corte para los costes de inventario."
 image:
-  path: /assets/img/posts/portada-rangos-fechas.png
+  path: /assets/img/posts/rangos-fechas-permitidos-business-central-v28/portada-rangos-fechas.png
   alt: Configuración contabilidad y Config. inventario de Business Central con los campos de fórmula de fecha y fecha de valoración más temprana permitida
 ---
 
@@ -37,7 +37,7 @@ El escenario que más se repite en proyecto es "que solo se pueda registrar dent
 | Permitir registro desde | `-PM` |
 | Permitir registro hasta | `PM` |
 
-![Página Configuración contabilidad con los campos Permitir registro desde/hasta fórmula de fecha rellenos con -PM y PM](/assets/img/posts/config-contabilidad-formula-fecha.png){: w="1200" h="630" .shadow }
+![Página Configuración contabilidad con los campos Permitir registro desde/hasta fórmula de fecha rellenos con -PM y PM](/assets/img/posts/rangos-fechas-permitidos-business-central-v28/config-contabilidad-formula-fecha.png){: w="1200" h="630" .shadow }
 *Los campos de fórmula de fecha en la Configuración contabilidad: `-PM` y `PM` para limitar el registro al mes en curso.*
 
 Y se acabó el mantenimiento mensual: la ventana se desplaza sola cada vez que cambia el mes.
@@ -61,7 +61,7 @@ El problema de fondo es conocido. Cada entrada de valor de inventario tiene una 
 
 La novedad es el campo **Fecha de valoración más temprana permitida**, en la página **Config. inventario**. Funciona como una barrera de escritura sobre la fecha de valoración.
 
-![Página Config. inventario con el campo Fecha de valoración más temprana permitida resaltado](/assets/img/posts/config-inventario-fecha-valoracion.png){: w="1200" h="630" .shadow }
+![Página Config. inventario con el campo Fecha de valoración más temprana permitida resaltado](/assets/img/posts/rangos-fechas-permitidos-business-central-v28/config-inventario-fecha-valoracion.png){: w="1200" h="630" .shadow }
 *El campo Fecha de valoración más temprana permitida en la página Config. inventario.*
 
 ### Qué bloquea y qué deja pasar

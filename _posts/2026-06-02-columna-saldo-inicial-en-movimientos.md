@@ -5,7 +5,7 @@ categories: [Business Central, Contabilidad]
 tags: [business-central, contabilidad, movimientos, productividad, novedades]
 description: Business Central permite mostrar el saldo acumulado directamente en la lista de movimientos de contabilidad mediante la columna Saldo inicial.
 image:
-  path: /assets/img/posts/saldo-inicial-movimientos-contabilidad.png
+  path: /assets/img/posts/columna-saldo-inicial-en-movimientos/saldo-inicial-movimientos-contabilidad.png
   alt: Lista de movimientos de contabilidad con la columna Saldo inicial mostrando el saldo acumulado
 ---
 
@@ -19,7 +19,7 @@ Durante años, una de las peticiones más recurrentes de los usuarios de Busines
 La columna **Saldo inicial** muestra el saldo acumulado de la cuenta en cada línea del movimiento. Es decir, a medida que se registran apuntes, el valor de esta columna refleja el saldo resultante hasta ese momento, actualizándose según el orden cronológico de los movimientos.
 
 
-![Lista de movimientos con la columna Saldo inicial](/assets/img/posts/saldo-inicial-movimientos-contabilidad.png)
+![Lista de movimientos con la columna Saldo inicial](/assets/img/posts/columna-saldo-inicial-en-movimientos/saldo-inicial-movimientos-contabilidad.png)
 
 
 ## Cómo activarla

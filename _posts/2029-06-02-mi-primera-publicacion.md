@@ -5,13 +5,13 @@ categories: [Business Central, Copilot]
 tags: [business-central, copilot, al, productividad]
 description: Primera publicación del blog con enfoque práctico sobre Business Central y Copilot.
 image:
-  path: /assets/img/posts/mi-primera-publicacion-cover.svg
+  path: /assets/img/posts/mi-primera-publicacion/mi-primera-publicacion-cover.svg
   alt: Portada del artículo Mi primera publicación
 ---
 
 Esta es mi primera publicación en el blog.
 
-![Portada del artículo](/assets/img/posts/mi-primera-publicacion-cover.svg)
+![Portada del artículo](/assets/img/posts/mi-primera-publicacion/mi-primera-publicacion-cover.svg)
 
 En este espacio voy a compartir contenido práctico sobre:
 
@@ -38,4 +38,4 @@ Las imágenes locales del blog se pueden insertar así:
 
 Si quieres controlar tamaño o estilo, puedes usar HTML:
 
-<img src="/assets/img/posts/mi-primera-publicacion-cover.svg" alt="Portada del artículo" width="800">
+<img src="/assets/img/posts/mi-primera-publicacion/mi-primera-publicacion-cover.svg" alt="Portada del artículo" width="800">
