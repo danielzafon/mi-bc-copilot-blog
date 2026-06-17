@@ -4,7 +4,7 @@ date: 2026-06-17 09:00:00 +0200
 categories: [Business Central, Funcional]
 tags: [business-central, compras, ventas, configuración, productividad]
 description: Repaso práctico de los campos y opciones de la conf. de compras y ventas que muchos equipos no han tocado nunca — y que pueden ahorrar tiempo real en el día a día.
-media_subpath: /img/post/2026-06-17-funcionalidades-ocultas-configuracion-compras-ventas/
+media_subpath: /assets/img/posts/2026-06-17-funcionalidades-ocultas-configuracion-compras-ventas/
 image:
   path: configuracion-compras-ventas.png
   alt: Configuración de compras y pagos en Business Central
