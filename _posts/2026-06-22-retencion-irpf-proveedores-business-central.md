@@ -3,12 +3,14 @@ title: "IRPF de proveedores en Business Central: por fin un estándar"
 date: 2026-06-22 10:00:00 +0200
 categories: [Business Central, Finanzas]
 tags: [business-central, irpf, retenciones, liquidacion, compras, cartera, preview]
-description: Probamos la nueva funcionalidad estándar de Withholding Tax (en preview) para registrar el IRPF de proveedores en Business Central: configuración paso a paso, liquidación y, lo mejor, su compatibilidad con el módulo de cartera.
+description: Probamos la nueva funcionalidad estándar de Withholding Tax en preview para registrar el IRPF de proveedores en Business Central; configuración paso a paso, liquidación y, lo mejor, su compatibilidad con el módulo de cartera.
 image:
   path: 01-habilitar-funcionalidad.png
   alt: Habilitación de la funcionalidad de retenciones en la configuración de contabilidad
 media_subpath: /assets/img/posts/retencion-irpf-proveedores/
----: Una funcionalidad que llevábamos años pidiendo
+---
+
+## Una funcionalidad que llevábamos años pidiendo
 
 Si algo hemos reclamado los que trabajamos con Business Central (y antes con NAV) en España, es una gestión nativa de la retención de impuestos a proveedores para poder registrar el IRPF correctamente. Durante mucho tiempo cada partner ha tirado de su propia solución para cubrir este hueco. Y curiosamente, casi todas parten de la misma solución original… pero eso ya es otra historia.
 
