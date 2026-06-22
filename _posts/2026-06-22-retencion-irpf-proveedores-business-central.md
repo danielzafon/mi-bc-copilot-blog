@@ -9,7 +9,7 @@ image:
   alt: Habilitación de la funcionalidad de retenciones en la configuración de contabilidad
 ---
 
-## Una funcionalidad que llevábamos años pidiendo
+## Retenciones a proveedores: Una funcionalidad que llevábamos años pidiendo
 
 Si algo hemos reclamado los que trabajamos con Business Central (y antes con NAV) en España, es una gestión nativa de la retención de impuestos a proveedores para poder registrar el IRPF correctamente. Durante mucho tiempo cada partner ha tirado de su propia solución para cubrir este hueco. Y curiosamente, casi todas parten de la misma solución original… pero eso ya es otra historia.
 
