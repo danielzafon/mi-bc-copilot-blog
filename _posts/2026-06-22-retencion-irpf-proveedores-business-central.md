@@ -5,8 +5,8 @@ categories: [Business Central, Finanzas]
 tags: [business-central, irpf, retenciones, liquidacion, compras, cartera, preview]
 description: Probamos la nueva funcionalidad estándar de Withholding Tax (en preview) para registrar el IRPF de proveedores en Business Central: configuración paso a paso, liquidación y, lo mejor, su compatibilidad con el módulo de cartera.
 image:
-  path: /assets/img/posts/retencion-irpf-proveedores/09-asiento-retencion-cartera.png
-  alt: Vista previa del asiento contable con la retención de IRPF y el efecto de cartera generado
+  path: /assets/img/posts/retencion-irpf-proveedores/01-habilitar-funcionalidad.png
+  alt: Habilitación de la funcionalidad de retenciones en la configuración de contabilidad
 ---
 
 ## Una funcionalidad que llevábamos años pidiendo
