@@ -98,4 +98,7 @@ También puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zaf
 	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
 		<img src="/assets/img/certifications/dynamics-365-business-central-functional-consultant-associate.png" alt="Microsoft Certified Dynamics 365 Business Central Functional Consultant Associate" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
 	</div>
+	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
+		<img src="/assets/img/certifications/business-central-developer.png" alt="Microsoft Certified Dynamics 365 Business Central Developer Associate" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
+	</div>
 </div>
