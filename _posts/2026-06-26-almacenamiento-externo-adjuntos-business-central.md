@@ -12,7 +12,7 @@ media_subpath: /assets/img/posts/almacenamiento-externo-adjuntos-business-centra
 
 ## El peso de la base de datos, ese viejo conocido
 
-Una de las cosas que más he acabado parcheando con desarrollo a lo largo de los años es el peso de la base de datos de los clientes. Y casi siempre el culpable es el mismo: los documentos adjuntos. Facturas en PDF, albaranes escaneados, contratos… todo eso la engorda, encarece el almacenamiento y, en muchos casos, ni siquiera necesita estar dentro de Business Central.
+En la nube, el espacio de alojamiento se ha convertido en un quebradero de cabeza que cada vez va a más. Y no es casualidad: cuantas más herramientas de digitalización incorporamos —captura de facturas con Document Capture, envío de correos desde BC, almacenamiento de adjuntos…—, más ficheros acaban dentro de la base de datos. Facturas en PDF, albaranes escaneados, contratos… todo eso la engorda, encarece el almacenamiento y, en muchos casos, ni siquiera necesita estar en Business Central. Durante años lo hemos resuelto de dos maneras: recomendando al cliente alojar los ficheros en SharePoint y vincularlos a los registros de BC, o mediante un desarrollo que almacenase directamente los adjuntos en SharePoint.
 
 Por eso me ha parecido muy interesante una novedad que BC ha incorporado recientemente: la posibilidad de **configurar cuentas de almacenamiento externas de forma nativa** para la gestión de los adjuntos. Sin desarrollo y sin extensiones de terceros. En este artículo te cuento cómo lo he configurado contra SharePoint y, sobre todo, qué partes merece la pena tener en cuenta antes de ponerlo en marcha en un cliente.
 
