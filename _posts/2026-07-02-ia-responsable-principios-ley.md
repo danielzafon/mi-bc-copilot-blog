@@ -79,7 +79,7 @@ La confianza no es un freno a la innovación; es lo que la hace sostenible. La l
 
 Adoptar la IA responsable ya no es solo lo correcto: empieza a ser también lo que toca por ley.
 
-¿Y tú, cómo lo estás gestionando en tus proyectos? Me encantará leerte.
+¿Y tú, cómo lo estás gestionando en tus proyectos?
 
 ---
 
