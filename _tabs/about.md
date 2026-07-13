@@ -14,11 +14,11 @@ Llevo **casi 20 años trabajando con Dynamics NAV (Navision) y Business Central*
 
 He trabajado en todo el ciclo:
 
-- análisis y diseño de procesos  
-- desarrollo y arquitectura técnica  
-- implantaciones y puesta en marcha  
-- integraciones con otros sistemas  
-- mejora continua y mantenimiento evolutivo  
+- análisis y diseño de procesos
+- desarrollo y arquitectura técnica
+- implantaciones y puesta en marcha
+- integraciones con otros sistemas
+- mejora continua y mantenimiento evolutivo
 
 Desde 2016 formo parte de **DynamizaTIC**, donde sigo trabajando en proyectos reales, con clientes y equipos que enfrentan retos diarios en sus sistemas y procesos.
 
@@ -30,11 +30,11 @@ Mi rol no es solo técnico: está centrado en asegurar que los proyectos **avanc
 
 En este contexto trabajo en:
 
-- definición de alcance y objetivos junto a negocio  
-- toma de decisiones funcionales y técnicas  
-- coordinación entre clientes, consultores y equipos de desarrollo  
-- seguimiento de avances, riesgos y bloqueos  
-- adaptación del proyecto a medida que evoluciona la realidad del cliente  
+- definición de alcance y objetivos junto a negocio
+- toma de decisiones funcionales y técnicas
+- coordinación entre clientes, consultores y equipos de desarrollo
+- seguimiento de avances, riesgos y bloqueos
+- adaptación del proyecto a medida que evoluciona la realidad del cliente
 
 Con el tiempo he aprendido que el valor no está solo en diseñar una buena solución, sino en **hacer que se entregue y funcione en el día a día**.
 
@@ -42,9 +42,9 @@ Con el tiempo he aprendido que el valor no está solo en diseñar una buena solu
 
 Mi trabajo siempre ha estado en la intersección de tres áreas:
 
-- **negocio** -> entender cómo funcionan realmente las operaciones  
-- **tecnología** -> diseñar y construir soluciones que encajen  
-- **ejecución** -> llevarlo a producción y que funcione en el día a día  
+- **negocio** -> entender cómo funcionan realmente las operaciones
+- **tecnología** -> diseñar y construir soluciones que encajen
+- **ejecución** -> llevarlo a producción y que funcione en el día a día
 
 ## IA aplicada al trabajo real
 
@@ -52,10 +52,10 @@ En los últimos años estoy centrado en integrar **IA en procesos reales**, más
 
 Me interesa especialmente:
 
-- cómo aplicar Copilot y modelos de IA en el día a día  
-- cómo automatizar tareas repetitivas en desarrollo y operaciones  
-- cómo estructurar casos de uso que realmente aporten valor  
-- cómo conseguir adopción dentro de los equipos  
+- cómo aplicar Copilot y modelos de IA en el día a día
+- cómo automatizar tareas repetitivas en desarrollo y operaciones
+- cómo estructurar casos de uso que realmente aporten valor
+- cómo conseguir adopción dentro de los equipos
 
 ## Sobre este blog
 
@@ -63,10 +63,10 @@ Este blog es una extensión de mi trabajo diario.
 
 Aquí comparto:
 
-- experiencias reales liderando proyectos de Business Central  
-- problemas habituales y cómo los hemos resuelto  
-- automatizaciones y uso de IA en producción  
-- aprendizajes sobre desarrollo, gestión y entrega  
+- experiencias reales liderando proyectos de Business Central
+- problemas habituales y cómo los hemos resuelto
+- automatizaciones y uso de IA en producción
+- aprendizajes sobre desarrollo, gestión y entrega
 
 El objetivo no es teorizar, sino **documentar lo que funciona (y a veces lo que no)** para que otros profesionales puedan aprovecharlo.
 
@@ -77,6 +77,9 @@ También puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zaf
 ### Certificaciones
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;align-items:center;justify-items:center;">
+	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
+		<img src="/assets/img/certifications/github-copilot-certification.png" alt="GitHub Copilot Certification Program" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
+	</div>
 	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
 		<img src="/assets/img/certifications/agentic-ai-business-solutions-architect.png" alt="Microsoft Certified Agentic AI Business Solutions Architect" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
 	</div>
