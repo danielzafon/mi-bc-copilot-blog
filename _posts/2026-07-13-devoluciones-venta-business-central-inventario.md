@@ -82,4 +82,4 @@ Salvo que esté configurado para tenerlo en cuenta desde los albaranes, la valor
 
 ## Una reflexión final
 
-Mi recomendación: si trabajas con devoluciones en Business Central, quédate con dos ideas. Construye siempre las líneas con **Revertir líneas doc.-tos registrados** en lugar d
+Mi recomendación: si trabajas con devoluciones en Business Central, quédate con dos ideas. Construye siempre las líneas con **Revertir líneas doc.-tos registrados** en lugar de copiarlas o teclearlas a mano, y no des por cerrada una devolución hasta que el abono esté registrado, aunque el importe sea cero. Es la única forma de que el inventario refleje la realidad.
