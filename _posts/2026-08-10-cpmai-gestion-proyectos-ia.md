@@ -5,7 +5,7 @@ categories: [Gestión de Proyectos, Inteligencia Artificial]
 tags: [cpmai, pmi, ia, gestion-proyectos, metodologia]
 description: Repaso al curso introductorio gratuito de PMI sobre CPMAI; el reto de adaptar la gestión de proyectos a la IA, el enfoque por patrones y el ciclo iterativo de seis fases.
 image:
-  path: 01-portada.png
+  path: 01-portada.PNG
   alt: CPMAI; ciclo iterativo de seis fases para gestionar proyectos de IA
 media_subpath: /assets/img/posts/cpmai-gestion-proyectos-ia/
 toc: true

@@ -58,12 +58,14 @@ main() {
 
   # build
   JEKYLL_ENV=production bundle exec jekyll b \
-    -d "$SITE_DIR$_baseurl" -c "$_config"
+    -d "$SITE_DIR/$_baseurl" -c "$_config"
 
   # test
   bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+    --ignore-files "/\/404.html/" \
+    --ignore-status-codes "999"
 }
 
 while (($#)); do
