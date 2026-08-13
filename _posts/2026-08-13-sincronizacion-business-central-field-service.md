@@ -200,5 +200,3 @@ Esto tiene pinta de que va a ser un problema seguro de cara a una puesta en marc
 Con todo esto pude cerrar una estimación razonable para la oferta: el tipo de integración contra el diario de proyectos evita montar el módulo de servicios, pero el tiempo que hay que reservar para las tablas virtuales, la disponibilidad de stock por ubicación y la validación de la sincronización completa no es menor.
 
 Mi recomendación: si vas a valorar un escenario parecido, no des por hecho que la parte de configuración es trivial solo porque no toques el módulo de servicios, y prueba varias veces la sincronización completa en un entorno de pruebas antes de darla por buena en cliente.
-
-Si te has encontrado con esta integración en algún proyecto, o sabes por qué el inventario seguía sin aparecer en Field Service en mi caso, me encantará leerte en los comentarios.
