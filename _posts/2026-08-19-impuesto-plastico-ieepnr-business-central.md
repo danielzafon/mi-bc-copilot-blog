@@ -38,7 +38,7 @@ En resumen: para un adquirente intracomunitario, el Libro Registro es el detalle
 
 ## Un ejemplo para verlo claro
 
-Supongamos que una empresa, adquirente intracomunitaria de envases de plástico, compra durante el trimestre 10.000 kg de envases con plástico, de los cuales 2.000 kg son plástico reciclado acreditado y 8.000 kg son plástico no reciclado.
+Supongamos que una empresa, adquirente intracomunitaria de envases de plástico, compra durante el trimestre 10.000 kg de envases con plástico, de los cuales 2.000 kg son plástico reciclado no reciclable y 8.000 kg son plástico no reciclado.
 
 El **Libro Registro** refleja cada adquisición: proveedor, fecha, kilos, movimientos y existencias resultantes. El **Modelo 592**, en cambio, solo utiliza la parte de plástico no reciclado (los 8.000 kg) para calcular la cuota tributaria y presentar la autoliquidación.
 
