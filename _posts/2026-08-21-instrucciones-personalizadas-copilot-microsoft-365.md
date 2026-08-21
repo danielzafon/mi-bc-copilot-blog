@@ -1,6 +1,6 @@
 ---
 title: "Personalización de Microsoft 365 Copilot: cuatro palancas para que deje de responder en genérico"
-date: 2026-08-25 10:00:00 +0200
+date: 2026-08-21 10:00:00 +0200
 categories: [Copilot, Productividad]
 tags: [copilot, microsoft-365, personalizacion, productividad, ia]
 description: Copilot no tiene por qué responder igual a todo el mundo; instrucciones personalizadas, perfil de trabajo, recuerdos guardados e historial de chats son las cuatro palancas que lo cambian. Qué hace cada una y cuál merece la pena activar de verdad.
