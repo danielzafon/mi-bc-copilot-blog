@@ -28,7 +28,7 @@ El objetivo era resolver justo eso:
 
 Antes de montar nada, revisé las opciones que ofrece el servicio de traducción de documentos de Azure Translator y valoré las dos: la [traducción sincrónica de un solo archivo](https://learn.microsoft.com/es-es/azure/ai-services/translator/document-translation/latest/quickstarts/synchronous) y la [traducción por lotes asíncrona](https://learn.microsoft.com/es-es/azure/ai-services/translator/document-translation/latest/quickstarts/asynchronous).
 
-La síncrona tiene la ventaja de que no requiere alojamiento: envías el documento directamente y recibes la traducción en la propia respuesta, sin pasar por Blob Storage. Como desventaja principal, admite menos formatos de fichero que la vía asíncrona; en concreto, no traduce PDF, que es precisamente el formato que mayormente íbamos a traducir. La asíncrona, en cambio, traduce varios documentos o archivos grandes en paralelo —conservando la estructura original, con soporte de todos los [idiomas y dialectos admitidos](https://learn.microsoft.com/es-es/azure/ai-services/translator/language-support) y compatibilidad con PDF—, pero exige una cuenta de Blob Storage con contenedores de origen y destino, y sondear el estado del trabajo hasta que termina.
+La síncrona tiene la ventaja de que no requiere alojamiento: envías el documento directamente y recibes la traducción en la propia respuesta, sin pasar por Blob Storage. Como desventaja principal, admite menos formatos de fichero que la vía asíncrona; en concreto, no traduce PDF, que es precisamente el formato que más íbamos a traducir. La asíncrona, en cambio, traduce varios documentos o archivos grandes en paralelo —conservando la estructura original, con soporte de todos los [idiomas y dialectos admitidos](https://learn.microsoft.com/es-es/azure/ai-services/translator/language-support) y compatibilidad con PDF—, pero exige una cuenta de Blob Storage con contenedores de origen y destino, y sondear el estado del trabajo hasta que termina.
 
 Para mi caso —principalmente PDF, y sin descartar otros formatos por el camino— la asíncrona era la única opción viable, así que fue la que desarrollé en este artículo. Si tu escenario es traducir un único documento suelto que no sea PDF, revisa antes la [traducción sincrónica](https://learn.microsoft.com/es-es/azure/ai-services/translator/document-translation/latest/quickstarts/synchronous) para confirmar que de verdad necesitas montar toda esta infraestructura.
 
@@ -213,7 +213,9 @@ Content-Type: application/json
 
 La respuesta incluye el identificador del trabajo y, inicialmente, puede mostrar el estado `NotStarted`.
 
-> En mi prueba, meter varios idiomas en la misma petición (varios `targets`, o varios `inputs`) no me funcionó. Terminé lanzando una petición independiente por idioma: una con `"language": "en"` y otra con `"language": "fr"`, cada una como un trabajo de traducción separado.
+> En mi prueba, meter varios idiomas en la misma petición (varios `targets` o varios `inputs`) no me funcionó. Terminé lanzando una petición independiente por idioma: una con `"language": "en"` y otra con `"language": "fr"`, cada una como un trabajo de traducción separado.
+>
+> Revisando después con más calma la [documentación de referencia de Start batch translation](https://learn.microsoft.com/es-es/azure/ai-services/translator/document-translation/reference/start-batch-translation), vi cómo se hace correctamente. Aun así, para mi caso particular me sigue resultando mejor lanzar una traducción por idioma: así controlo mejor el resultado de cada una por separado.
 {: .prompt-tip }
 
 El resto de operaciones disponibles —cancelar un trabajo, la traducción síncrona de un solo archivo...— están recogidas en la [guía de la API REST de traducción de documentos](https://learn.microsoft.com/es-es/azure/ai-services/translator/document-translation/latest/rest-api/guide-overview).
@@ -232,7 +234,7 @@ GET https://<endpoint-translator>/translator/text/batch/v1.1/batches/<id>
 | `Failed` | Ejecución fallida. |
 | `ValidationFailed` | La solicitud no superó la validación previa. |
 
-La respuesta completa da más detalle que el simple `status`: dentro de `summary` aparecen los contadores de documentos totales, con éxito, en error, en curso, pendientes y cancelados, además de `totalCharacterCharged`, los caracteres por los que se te va a cobrar.
+La respuesta completa da más detalle que el simple `status`: dentro de `summary` aparecen los contadores de documentos: totales, con éxito, en error, en curso, pendientes y cancelados, además de `totalCharacterCharged`, los caracteres por los que se te va a cobrar.
 
 ![Respuesta de consulta de estado con el resumen de documentos traducidos, en error y caracteres facturados](06-consultar-estado-respuesta.png){: w="1408" h="795" .shadow }
 *Ejemplo de respuesta real: el trabajo aparece como `Succeeded`, pero el resumen indica que de tres documentos, solo uno se tradujo correctamente y dos fallaron.*
@@ -260,11 +262,18 @@ Revisa que el SAS incluya el permiso requerido para la operación concreta: `Wri
 
 ## Precio
 
-Según la documentación, el coste de traducir documentos de texto se calcula por número de caracteres, y si hay contenido en imágenes, por número de imágenes; siempre en modalidad de pago por uso, aunque tengas contratado algún nivel de compromiso. Tienes el detalle actualizado en la [página de precios de Azure Translator](https://azure.microsoft.com/pricing/details/cognitive-services/translator).
+Según la documentación, el coste de traducir documentos de texto se calcula por número de caracteres y, si hay contenido en imágenes, por número de imágenes; siempre en modalidad de pago por uso, aunque tengas contratado algún nivel de compromiso. Tienes el detalle actualizado en la [página de precios de Azure Translator](https://azure.microsoft.com/es-es/pricing/details/translator/).
 
 A eso hay que sumarle el coste del alojamiento en Blob Storage, aunque debería ser muy bajo en comparación con el de la traducción en sí.
 
-Mi recomendación —y en lo que estoy ahora mismo— es poder hacer una estimación de coste por documento traducido a partir de las pruebas que estamos realizando, antes de llevar el flujo a producción a mayor escala.
+> En las pruebas que estamos haciendo hemos lanzado la traducción de unos 1.200 archivos —principalmente pequeños documentos PDF de fichas técnicas e imágenes— y el coste total ha sido de 190 €: según el desglose de costes de Azure, 133,10 € corresponden a traducción de caracteres de documento (`S1 Document Characters`) y 56,17 € a imágenes (`S1 Image Images`). Echando la cuenta, sale a poco más de 0,15 € por documento traducido, aunque es una media que hay que coger con cuidado: el coste depende directamente de los caracteres (y las imágenes) de cada archivo, así que no es lo mismo traducir un PDF de dos páginas que uno de 500. Con documentos grandes mezclados en el lote, ese 0,15 € de media puede quedarse corto.
+>
+> Lo comprobamos en otra prueba, esta vez con un único PDF de 500 páginas traducido a 6 idiomas: el coste fue de casi 300 €, más que el de los 1.200 archivos anteriores juntos. Todos los archivos de la primera prueba no llegaban entre todos a 2 millones de caracteres, mientras que este documento, multiplicado por los 6 idiomas de destino, se acercaba a los 20 millones.
+>
+> Dicho esto, fue una prueba bruta para ver hasta dónde llegaba el coste, no un caso real: el objetivo de nuestra herramienta no es traducir documentos tan grandes, y para ese volumen tampoco creo que esta sea la herramienta más adecuada.
+{: .prompt-tip }
+
+Mi recomendación: haz esta misma cuenta —coste total entre documentos traducidos— con tus propias pruebas antes de llevar el flujo a producción a mayor escala; el precio depende del volumen de caracteres (documento × idiomas de destino), no del número de archivos, así que un único dato no basta para proyectar el coste real.
 
 ## Buenas prácticas
 
