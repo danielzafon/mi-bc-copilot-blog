@@ -78,7 +78,7 @@ También puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/daniel-zaf
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;align-items:center;justify-items:center;">
 	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
-		<img src="/assets/img/certifications/github-copilot-certification.png" alt="GitHub Copilot Certification Program" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
+		<img src="/assets/img/certifications/github-copilot-certification.svg" alt="GitHub Copilot Certification Program" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
 	</div>
 	<div style="display:flex;align-items:center;justify-content:center;min-height:220px;">
 		<img src="/assets/img/certifications/agentic-ai-business-solutions-architect.png" alt="Microsoft Certified Agentic AI Business Solutions Architect" loading="lazy" style="width:180px;height:180px;object-fit:contain;">
