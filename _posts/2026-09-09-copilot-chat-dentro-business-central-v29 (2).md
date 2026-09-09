@@ -1,6 +1,6 @@
 ---
 title: "Copilot Chat por fin dentro de Business Central"
-date: 2026-09-09 10:00:00 +0200
+date: 2026-09-09 00:00:00 +0200
 categories: [Business Central, Copilot]
 tags: [business-central, copilot, asistente-virtual, novedades]
 description: La vista previa pública de la 2026 release wave 2 (Update 29.0) trae un chat de Microsoft Copilot rediseñado e integrado en Business Central; así es el cambio y qué implica para partners y usuarios.
