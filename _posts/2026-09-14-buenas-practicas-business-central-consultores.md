@@ -1,6 +1,6 @@
 ---
 title: "Buenas prácticas en Business Central: los consejos que repito a mi equipo de consultores"
-date: 2026-09-09 10:00:00 +0200
+date: 2026-09-14 10:00:00 +0200
 categories: [Business Central, Funcional]
 tags: [business-central, buenas-practicas, consultoria, iva, contabilidad, productividad]
 description: Recopilación práctica de consejos de uso diario en Business Central sobre registro, IVA, plan de cuentas, diarios y producción, recuperada de una sesión interna con mi equipo de consultores.
@@ -10,7 +10,8 @@ image:
 media_subpath: /assets/img/posts/buenas-practicas-business-central-consultores/
 ---
 
-Hace un tiempo preparé una sesión interna para el equipo de Business Central de mi empresa con un objetivo muy concreto: juntar en un solo sitio los trucos, atajos y precauciones que cada uno va aprendiendo por su cuenta, a base de proyectos, tickets de soporte y algún que otro susto. No era una sesión de teoría de Business Central, sino un repaso de lo que de verdad usamos —o deberíamos usar— en el día a día, tanto nosotros, como consultores, como los propios usuarios de nuestros clientes.
+Hace un tiempo preparé una sesión interna para el equipo de Business Central de mi empresa con un objetivo muy concreto: juntar en un solo sitio los trucos, atajos y precauciones que cada uno va aprendiendo por su cuenta, a base de proyectos, tickets de soporte y algún que otro susto. 
+No era una sesión de teoría de Business Central, sino un repaso de lo que de verdad usamos —o deberíamos usar— en el día a día, tanto nosotros, como consultores, como los propios usuarios de nuestros clientes.
 
 Recupero aquí esa sesión en formato artículo, agrupada en cuatro bloques: trabajo diario y registro, IVA, contabilidad y plan de cuentas, y cobros, pagos y producción.
 
@@ -18,7 +19,9 @@ Recupero aquí esa sesión en formato artículo, agrupada en cuatro bloques: tra
 
 ### La ayuda integrada, el primer sitio donde mirar
 
-Business Central trae ayuda integrada que da acceso a documentación y guías directamente desde la propia aplicación, sin salir del entorno de trabajo. Se accede pulsando el icono de interrogación en la barra superior, y abre un panel con información sobre la página o tarea en la que estás, enlaces a Microsoft Learn y otros recursos de soporte. Antes de escalar una duda a soporte o de ponerse a buscar en Microsoft Learn, merece la pena acostumbrar a los usuarios —y acostumbrarnos nosotros mismos— a mirar primero ahí. Resuelve más dudas de las que parece, y ahorra tickets que ni siquiera hacía falta abrir.
+Business Central trae ayuda integrada que da acceso a documentación y guías directamente desde la propia aplicación, sin salir del entorno de trabajo. Se accede pulsando el icono de interrogación en la barra superior, y abre un panel con información sobre la página o tarea en la que estás, enlaces a Microsoft Learn y otros recursos de soporte. 
+
+Antes de escalar una duda a soporte o de ponerse a buscar en Microsoft Learn, merece la pena acostumbrar a los usuarios —y acostumbrarnos nosotros mismos— a mirar primero ahí. Resuelve más dudas de las que parece, y ahorra tickets que ni siquiera hacía falta abrir.
 
 ![Panel de ayuda de Business Central abierto desde el icono de interrogación de la barra superior](09-ayuda-integrada.png){: w="1810" h="927" .shadow }
 *Panel de ayuda contextual, con información de la página actual y enlaces a Microsoft Learn*
@@ -35,7 +38,8 @@ La fecha de trabajo permite indicarle al sistema una fecha distinta a la actual,
 
 ### Limitar el periodo de registro permitido
 
-En la Configuración contabilidad tienes los campos "Permitir registro desde" y "Permitir registro hasta", que acotan el rango de fechas en el que se puede registrar cualquier documento. Es un control sencillo pero con mucho impacto: evita que, por error o por despiste, alguien registre un documento con una fecha de un periodo ya cerrado o de un ejercicio que todavía no ha empezado.
+En la Configuración contabilidad tienes los campos "Permitir registro desde" y "Permitir registro hasta", que acotan el rango de fechas en el que se puede registrar cualquier documento. 
+Es un control sencillo pero con mucho impacto: evita que, por error o por despiste, alguien registre un documento con una fecha de un periodo ya cerrado o de un ejercicio que todavía no ha empezado.
 
 > Lo habitual es ir moviendo ese rango según avanza el cierre del periodo o el ejercicio, en lugar de dejarlo abierto de forma indefinida. Como conté en [una entrada anterior](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/), desde la v28 estos campos admiten una fórmula de fecha en lugar de una fecha fija, así que puedes dejar el registro siempre limitado al mes actual (`-PM`/`PM` en un entorno en castellano) sin tener que ir actualizándolo periodo a periodo.
 {: .prompt-tip }
@@ -52,21 +56,24 @@ Antes de registrar cualquier transacción, la función de vista previa de regist
 
 ### Registrar es para la posteridad
 
-Una vez que una transacción se registra, ya no se puede modificar ni eliminar. Si hace falta un cambio, hay que revertir el asiento contable o emitir un abono en el caso de una factura. Es una de las primeras cosas que explico a cualquier usuario nuevo, porque cambia por completo cómo hay que abordar un error: no se "corrige", se revierte o se abona, y el registro original queda ahí, para siempre.
+Una vez que una transacción se registra, ya no se puede modificar ni eliminar. Si hace falta un cambio, hay que revertir el asiento contable o emitir un abono en el caso de una factura. 
+Es una de las primeras cosas que explico a cualquier usuario nuevo, porque cambia por completo cómo hay que abordar un error: no se "corrige", se revierte o se abona, y el registro original queda ahí, para siempre.
 
 > **Por experiencia:** dejar esto claro desde un principio a los usuarios evita muchos disgustos en el futuro.
 {: .prompt-tip }
 
 ### Editar en Excel, con cuidado
 
-Editar en Excel es muy útil para importaciones y modificaciones masivas de registros. Pero es también muy peligroso si lo usan usuarios que no son avanzados: permite cambios directos y en bloque, sin las validaciones línea a línea que sí tienes al editar desde la propia página. Tanto abrir en Excel como editar en Excel requieren tener asignado un conjunto de permisos específico, así que es una barrera adicional —y una palanca de control— que conviene usar: no lo des por defecto a todo el mundo, resérvalo para consultores o usuarios avanzados. Mi recomendación es, además, trabajar siempre con una copia o un filtro claro de qué se va a tocar antes de guardar.
+Editar en Excel es muy útil para importaciones y modificaciones masivas de registros. Pero es también muy peligroso si lo usan usuarios que no son avanzados: permite cambios directos y en bloque, sin las validaciones línea a línea que sí tienes al editar desde la propia página. 
+Tanto abrir en Excel como editar en Excel requieren tener asignado un conjunto de permisos específico, así que es una barrera adicional —y una palanca de control— que conviene usar: no lo des por defecto a todo el mundo, resérvalo para consultores o usuarios avanzados. Mi recomendación es, además, trabajar siempre con una copia o un filtro claro de qué se va a tocar antes de guardar.
 
 ![Menú de exportación con las opciones "Abrir en Excel" y "Editar en Excel" resaltadas sobre un listado de clientes](02-editar-en-excel.png){: w="1657" h="856" .shadow }
 *Opciones "Abrir en Excel" y "Editar en Excel" desde un listado de clientes*
 
 ### Analizar sin salir de BC
 
-La función Analizar es útil para contar registros o hacer sumatorios, y permite filtrar, agrupar o dinamizar los datos de forma parecida a una tabla dinámica sin salir de Business Central. Desde la versión 26.2 además permite incluir información de tablas relacionadas, lo que la hace todavía más práctica para resolver de un vistazo preguntas que antes requerían exportar a Excel.
+La función Analizar es útil para contar registros o hacer sumatorios, y permite filtrar, agrupar o dinamizar los datos de forma parecida a una tabla dinámica sin salir de Business Central. 
+Desde la versión 26.2 además permite incluir información de tablas relacionadas, lo que la hace todavía más práctica para resolver de un vistazo preguntas que antes requerían exportar a Excel.
 
 ![Modo de análisis sobre el histórico de facturas de venta, con el importe agrupado y sumado por cliente](10-analizar-importe-por-cliente.png){: w="1606" h="861" .shadow }
 *Análisis del histórico de facturas de venta, agrupado por cliente con el importe sumado*
@@ -75,7 +82,8 @@ La función Analizar es útil para contar registros o hacer sumatorios, y permit
 
 ### Editar movimientos de IVA, cuando hace falta
 
-Es posible editar los movimientos de IVA para corregir o actualizar información como el CIF y el código de país. No es algo que se deba hacer a la ligera, pero es útil y necesario para corregir errores al enviar el SII y para extraer correctamente los modelos 347 y 349. Por experiencia, la mayoría de problemas al sacarlos vienen de clientes o proveedores con movimientos sin CIF o sin el código de país informado, así que cuando un cliente detecta una discrepancia en estos modelos, ahí es el primer sitio donde miro antes de buscar el problema en otro lado.
+Es posible editar los movimientos de IVA para corregir o actualizar información como el CIF y el código de país. No es algo que se deba hacer a la ligera, pero es útil y necesario para corregir errores al enviar el SII y para extraer correctamente los modelos 347 y 349. 
+Por experiencia, la mayoría de problemas al sacarlos vienen de clientes o proveedores con movimientos sin CIF o sin el código de país informado, así que cuando un cliente detecta una discrepancia en estos modelos, ahí es el primer sitio donde miro antes de buscar el problema en otro lado.
 
 ![Página "Movs. IVA" en modo "Editar lista" con las columnas "Cód. país/región" y "CIF/NIF" resaltadas](11-modificar-movs-iva.png){: w="1738" h="843" .shadow }
 *Movimientos de IVA en modo "Editar lista", con el código de país/región y el CIF/NIF editables*
@@ -89,7 +97,9 @@ Trabajar con ambas fechas permite controlar por separado el periodo de registro 
 
 ### Rango de fechas de IVA
 
-En la Configuración de IVA, los campos "Permitir fecha de IVA desde" y "Permitir fecha de IVA hasta" limitan el rango de fechas de IVA en el que se pueden registrar movimientos, de forma independiente al rango de registro general. Es el mismo criterio que el periodo de registro contable, pero aplicado específicamente al IVA: te permite cerrar un periodo de IVA ya declarado sin tener que bloquear también el registro contable general, algo especialmente útil cuando la periodicidad de declaración de IVA no coincide con la del cierre contable.
+En la Configuración de IVA, los campos "Permitir fecha de IVA desde" y "Permitir fecha de IVA hasta" limitan el rango de fechas de IVA en el que se pueden registrar movimientos, de forma independiente al rango de registro general. 
+
+Es el mismo criterio que el periodo de registro contable, pero aplicado específicamente al IVA: te permite cerrar un periodo de IVA ya declarado sin tener que bloquear también el registro contable general, algo especialmente útil cuando la periodicidad de declaración de IVA no coincide con la del cierre contable.
 
 > Por ejemplo, esto nos permite limitar el registro de facturas —las que generan IVA— al mes actual, mientras que seguimos permitiendo registrar asientos durante un periodo más amplio. Es una combinación habitual: control estricto sobre lo que va a declaración de IVA, y algo más de margen para la contabilidad general.
 {: .prompt-tip }
@@ -108,14 +118,18 @@ Configurar el sistema para bloquear cruces de IVA no permitidos asegura que toda
 
 ### Cuentas contables en facturas
 
-Para poder utilizar una cuenta contable en una factura de compra o de venta, esta tiene que tener indicado en su ficha un grupo contable de registro (normalmente VARIOS), la entrada directa marcada y, siempre que sea posible, el grupo de IVA correspondiente. Sin el grupo contable configurado, la cuenta sí aparece como opción en la línea, pero al intentar registrar el documento da error: no te deja continuar y te obliga a indicar el grupo contable manualmente en cada línea.
+Para poder utilizar una cuenta contable en una factura de compra o de venta, esta tiene que tener indicado en su ficha un grupo contable de registro (normalmente VARIOS), la entrada directa marcada y, siempre que sea posible, el grupo de IVA correspondiente. 
+
+Sin el grupo contable configurado, la cuenta sí aparece como opción en la línea, pero al intentar registrar el documento da error: no te deja continuar y te obliga a indicar el grupo contable manualmente en cada línea.
 
 ![Ficha de cuenta contable con "Registro directo" activado y los grupos contables de producto general e IVA resaltados](12-cuenta-contable-registro-directo.png){: w="1412" h="845" .shadow }
 *Ficha de cuenta contable, con "Registro directo" y los grupos contables de producto general e IVA configurados*
 
 ### Entrada directa, solo donde toca
 
-Para evitar descuadres conviene desmarcar la entrada directa en todas las cuentas asociadas a grupos contables: si una cuenta ya recibe sus movimientos a través del grupo contable, no debería poder recibir también entradas manuales sueltas. La acción "Lista punto uso" te dice si una cuenta está siendo utilizada en algún grupo o parametrización contable, así que antes de tocar la entrada directa de una cuenta, revisa primero ahí para no romper nada que dependa de ella.
+Para evitar descuadres conviene desmarcar la entrada directa en todas las cuentas asociadas a grupos contables: si una cuenta ya recibe sus movimientos a través del grupo contable, no debería poder recibir también entradas manuales sueltas. 
+
+La acción "Lista punto uso" te dice si una cuenta está siendo utilizada en algún grupo o parametrización contable, así que antes de tocar la entrada directa de una cuenta, revisa primero ahí para no romper nada que dependa de ella.
 
 ![Ficha de cuenta contable con la acción "Lista punto uso" resaltada, junto a los interruptores de saldo controlable en diarios y entrada directa](05-entrada-directa-lista-punto-uso.png){: w="1530" h="871" .shadow }
 *Ficha de cuenta contable, con "Lista punto uso" y los interruptores de "Saldo controlable en diarios" y "Registro directo"*
@@ -193,4 +207,8 @@ También puedes volver a abrir una orden de producción terminada desde el menú
 
 ## Reflexión final
 
-Todas las empresas compran y venden, y algunas transforman; eso vale para cualquier empresa del mundo, por especial que se crea. Ni tú ni yo somos cirujanos ni físicos cuánticos: estamos contabilizando asientos, facturas y abonos con los mismos flujos y las mismas herramientas que usan miles de empresas —hoy en día, más de 50.000 solo en BC SaaS—. Por experiencia, es muy importante recalcar a los clientes que utilicen las herramientas que nos da Business Central para minimizar los errores del día a día: cambiar la fecha de trabajo, hacer una vista previa a tiempo o dedicar un poco de tiempo a configurar y mantener los periodos de fechas en los que podemos registrar evita muchos disgustos.
+Todas las empresas compran y venden, y algunas transforman; eso vale para cualquier empresa del mundo, por especial que se crea. 
+
+Ni tú ni yo somos cirujanos ni físicos cuánticos: estamos contabilizando asientos, facturas y abonos con los mismos flujos y las mismas herramientas que usan miles de empresas —hoy en día, más de 50.000 solo en BC SaaS—. 
+
+Por experiencia, es muy importante recalcar a los clientes que utilicen las herramientas que nos da Business Central para minimizar los errores del día a día: cambiar la fecha de trabajo, hacer una vista previa a tiempo o dedicar un poco de tiempo a configurar y mantener los periodos de fechas en los que podemos registrar evita muchos disgustos.
