@@ -11,6 +11,7 @@ media_subpath: /assets/img/posts/buenas-practicas-business-central-consultores/
 ---
 
 Hace un tiempo preparé una sesión interna para el equipo de Business Central de mi empresa con un objetivo muy concreto: juntar en un solo sitio los trucos, atajos y precauciones que cada uno va aprendiendo por su cuenta, a base de proyectos, tickets de soporte y algún que otro susto. 
+
 No era una sesión de teoría de Business Central, sino un repaso de lo que de verdad usamos —o deberíamos usar— en el día a día, tanto nosotros, como consultores, como los propios usuarios de nuestros clientes.
 
 Recupero aquí esa sesión en formato artículo, agrupada en cuatro bloques: trabajo diario y registro, IVA, contabilidad y plan de cuentas, y cobros, pagos y producción.
@@ -28,7 +29,9 @@ Antes de escalar una duda a soporte o de ponerse a buscar en Microsoft Learn, me
 
 ### Fecha de trabajo, no la fecha de hoy
 
-La fecha de trabajo permite indicarle al sistema una fecha distinta a la actual, algo muy útil cuando hay que registrar varios documentos con una fecha diferente a la de hoy. Para los usuarios es cuestión de configurarla correctamente antes de una sesión de registro masivo con fecha atrasada.
+La fecha de trabajo permite indicarle al sistema una fecha distinta a la actual, algo muy útil cuando hay que registrar varios documentos con una fecha diferente a la de hoy. 
+
+Para los usuarios es cuestión de configurarla correctamente antes de una sesión de registro masivo con fecha atrasada.
 
 > **Para quienes programamos en AL:** el matiz es más importante de lo que parece. A la hora de asignar fechas al crear documentos hay que usar `Workdate()` y no `Today()`. Usar `Today()` donde tocaba `Workdate()` es un error sutil que no falla en desarrollo, pero que se nota en cuanto un usuario cambia su fecha de trabajo y el documento se crea con una fecha que no esperaba.
 {: .prompt-tip }
@@ -39,6 +42,7 @@ La fecha de trabajo permite indicarle al sistema una fecha distinta a la actual,
 ### Limitar el periodo de registro permitido
 
 En la Configuración contabilidad tienes los campos "Permitir registro desde" y "Permitir registro hasta", que acotan el rango de fechas en el que se puede registrar cualquier documento. 
+
 Es un control sencillo pero con mucho impacto: evita que, por error o por despiste, alguien registre un documento con una fecha de un periodo ya cerrado o de un ejercicio que todavía no ha empezado.
 
 > Lo habitual es ir moviendo ese rango según avanza el cierre del periodo o el ejercicio, en lugar de dejarlo abierto de forma indefinida. Como conté en [una entrada anterior](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/), desde la v28 estos campos admiten una fórmula de fecha en lugar de una fecha fija, así que puedes dejar el registro siempre limitado al mes actual (`-PM`/`PM` en un entorno en castellano) sin tener que ir actualizándolo periodo a periodo.
@@ -57,6 +61,7 @@ Antes de registrar cualquier transacción, la función de vista previa de regist
 ### Registrar es para la posteridad
 
 Una vez que una transacción se registra, ya no se puede modificar ni eliminar. Si hace falta un cambio, hay que revertir el asiento contable o emitir un abono en el caso de una factura. 
+
 Es una de las primeras cosas que explico a cualquier usuario nuevo, porque cambia por completo cómo hay que abordar un error: no se "corrige", se revierte o se abona, y el registro original queda ahí, para siempre.
 
 > **Por experiencia:** dejar esto claro desde un principio a los usuarios evita muchos disgustos en el futuro.
@@ -65,6 +70,7 @@ Es una de las primeras cosas que explico a cualquier usuario nuevo, porque cambi
 ### Editar en Excel, con cuidado
 
 Editar en Excel es muy útil para importaciones y modificaciones masivas de registros. Pero es también muy peligroso si lo usan usuarios que no son avanzados: permite cambios directos y en bloque, sin las validaciones línea a línea que sí tienes al editar desde la propia página. 
+
 Tanto abrir en Excel como editar en Excel requieren tener asignado un conjunto de permisos específico, así que es una barrera adicional —y una palanca de control— que conviene usar: no lo des por defecto a todo el mundo, resérvalo para consultores o usuarios avanzados. Mi recomendación es, además, trabajar siempre con una copia o un filtro claro de qué se va a tocar antes de guardar.
 
 ![Menú de exportación con las opciones "Abrir en Excel" y "Editar en Excel" resaltadas sobre un listado de clientes](02-editar-en-excel.png){: w="1657" h="856" .shadow }
@@ -72,8 +78,7 @@ Tanto abrir en Excel como editar en Excel requieren tener asignado un conjunto d
 
 ### Analizar sin salir de BC
 
-La función Analizar es útil para contar registros o hacer sumatorios, y permite filtrar, agrupar o dinamizar los datos de forma parecida a una tabla dinámica sin salir de Business Central. 
-Desde la versión 26.2 además permite incluir información de tablas relacionadas, lo que la hace todavía más práctica para resolver de un vistazo preguntas que antes requerían exportar a Excel.
+La función Analizar es útil para contar registros o hacer sumatorios, y permite filtrar, agrupar o dinamizar los datos de forma parecida a una tabla dinámica sin salir de Business Central. Desde la versión 26.2 además permite incluir información de tablas relacionadas, lo que la hace todavía más práctica para resolver de un vistazo preguntas que antes requerían exportar a Excel.
 
 ![Modo de análisis sobre el histórico de facturas de venta, con el importe agrupado y sumado por cliente](10-analizar-importe-por-cliente.png){: w="1606" h="861" .shadow }
 *Análisis del histórico de facturas de venta, agrupado por cliente con el importe sumado*
@@ -83,6 +88,7 @@ Desde la versión 26.2 además permite incluir información de tablas relacionad
 ### Editar movimientos de IVA, cuando hace falta
 
 Es posible editar los movimientos de IVA para corregir o actualizar información como el CIF y el código de país. No es algo que se deba hacer a la ligera, pero es útil y necesario para corregir errores al enviar el SII y para extraer correctamente los modelos 347 y 349. 
+
 Por experiencia, la mayoría de problemas al sacarlos vienen de clientes o proveedores con movimientos sin CIF o sin el código de país informado, así que cuando un cliente detecta una discrepancia en estos modelos, ahí es el primer sitio donde miro antes de buscar el problema en otro lado.
 
 ![Página "Movs. IVA" en modo "Editar lista" con las columnas "Cód. país/región" y "CIF/NIF" resaltadas](11-modificar-movs-iva.png){: w="1738" h="843" .shadow }
@@ -207,8 +213,6 @@ También puedes volver a abrir una orden de producción terminada desde el menú
 
 ## Reflexión final
 
-Todas las empresas compran y venden, y algunas transforman; eso vale para cualquier empresa del mundo, por especial que se crea. 
-
-Ni tú ni yo somos cirujanos ni físicos cuánticos: estamos contabilizando asientos, facturas y abonos con los mismos flujos y las mismas herramientas que usan miles de empresas —hoy en día, más de 50.000 solo en BC SaaS—. 
+Todas las empresas compran y venden, y algunas transforman; eso vale para cualquier empresa del mundo, por especial que se crea. Ni tú ni yo somos cirujanos ni físicos cuánticos: estamos contabilizando asientos, facturas y abonos con los mismos flujos y las mismas herramientas que usan miles de empresas —hoy en día, más de 50.000 solo en BC SaaS—. 
 
 Por experiencia, es muy importante recalcar a los clientes que utilicen las herramientas que nos da Business Central para minimizar los errores del día a día: cambiar la fecha de trabajo, hacer una vista previa a tiempo o dedicar un poco de tiempo a configurar y mantener los periodos de fechas en los que podemos registrar evita muchos disgustos.
