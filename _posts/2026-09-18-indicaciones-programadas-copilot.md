@@ -34,10 +34,42 @@ El botón **Nuevo**, arriba a la derecha, abre el formulario de creación.
 
 El formulario tiene dos partes. La primera es la propia indicación: el texto exacto que le pasarías a Copilot si abrieras un chat normal. Por ejemplo, para un dashboard semanal:
 
-> Dashboard de logros y victorias de la semana. Revisa mis reuniones, chats, correos electrónicos, documentos, tareas y grabaciones de esta semana.
+```text
+Dashboard de logros y victorias de la semana
+
+Revisa mis reuniones, chats, correos electrónicos, documentos, tareas y grabaciones de esta semana.
+
+No te limites a resumir la actividad reciente. Analiza el impacto y el valor aportado.
+
+Identifica y destaca:
+- Proyectos estratégicos en los que he trabajado.
+- Implantaciones Business Central en curso.
+- Clientes con mayor avance esta semana.
+- Decisiones importantes tomadas.
+- Reuniones relevantes y acuerdos alcanzados.
+- Documentación creada o actualizada.
+- Planificaciones, convocatorias o iniciativas puestas en marcha.
+- Problemas desbloqueados o riesgos mitigados.
+- Coordinación de equipos o asignación de recursos.
+- Actividades de liderazgo, gestión de proyectos y dirección funcional.
+
+Presta especial atención a cualquier cliente o proyecto que haya tenido actividad significativa esta semana.
+
+No clasifiques por correos o reuniones individuales. Agrupa por proyectos y logros.
+
+Devuelve:
+- Resumen ejecutivo de la semana.
+- Top 5 victorias más importantes.
+- Proyectos con mayor avance.
+- Contribuciones de liderazgo y gestión.
+- Logros técnicos y funcionales.
+- Mensaje final motivador valorando el impacto de mi trabajo.
+
+Prioriza siempre impacto, avance y valor generado frente a volumen de actividad.
+```
 
 ![Formulario de creación de una programación con el cuadro de indicación remarcado](04-indicacion-texto.png){: w="1019" h="768" .shadow }
-*El cuadro de indicación admite el mismo nivel de detalle que un prompt escrito a mano en el chat.*
+*El cuadro de indicación tiene scroll y admite un prompt tan largo como el de arriba, aunque en la captura solo se vea el arranque.*
 
 La segunda parte es la programación en sí: cuándo empieza, con qué frecuencia se repite —diaria, semanal o mensual— y hasta cuándo.
 
@@ -71,7 +103,7 @@ En mi caso tengo tres indicaciones activas, cada una resolviendo un hueco distin
 - **Imputación de la jornada de ayer**, para no dejar que se acumulen varios días de trabajo sin repartir entre clientes y proyectos.
 - **Resumen de logros y victorias de la semana**, en positivo, cada viernes, para cerrar la semana viendo lo que sí ha salido bien y no solo lo que ha quedado pendiente.
 
-Ninguna de las tres es especialmente compleja como prompt suelto. Lo que cambia es que ahora no tengo que acordarme de lanzarlas: se ejecutan solas y me avisan cuando están listas.
+El de la mañana y el de la imputación son un par de líneas; el de los viernes, como acabas de ver, es bastante más largo porque le pido que agrupe, priorice y valore el impacto, no que se limite a listar actividad. En los tres casos cambia lo mismo: ya no tengo que acordarme de lanzarlas, se ejecutan solas y me avisan cuando están listas.
 
 ## Mi recomendación práctica
 
