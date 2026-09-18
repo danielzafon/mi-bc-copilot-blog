@@ -1,0 +1,151 @@
+<aside id="sidebar" aria-label="Sidebar">
+  <div class="sidebar-profile">
+    <div class="profile-avatar">
+      <img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" />
+    </div>
+
+    <div class="profile-brand">
+      <h1 class="site-title">{{ site.title }}</h1>
+      <p class="site-subtitle">{{ site.tagline }}</p>
+    </div>
+
+    {% include brand-strip.html %}
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Navegación principal">
+    <a class="nav-link{% if page.url == '/' or page.url == '/index.html' %} active{% endif %}" href="{{ '/' | relative_url }}">
+      <span class="nav-icon"><i class="fas fa-home"></i></span>
+      <span>Inicio</span>
+    </a>
+
+    <a class="nav-link{% if page.url contains '/categories/' %} active{% endif %}" href="{{ '/categories/' | relative_url }}">
+      <span class="nav-icon"><i class="fas fa-folder"></i></span>
+      <span>Categorías</span>
+    </a>
+
+    <a class="nav-link{% if page.url contains '/tags/' %} active{% endif %}" href="{{ '/tags/' | relative_url }}">
+      <span class="nav-icon"><i class="fas fa-tags"></i></span>
+      <span>Etiquetas</span>
+    </a>
+
+    <a class="nav-link{% if page.url contains '/archives/' %} active{% endif %}" href="{{ '/archives/' | relative_url }}">
+      <span class="nav-icon"><i class="fas fa-archive"></i></span>
+      <span>Archivo</span>
+    </a>
+
+    <a class="nav-link{% if page.url contains '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">
+      <span class="nav-icon"><i class="fas fa-info-circle"></i></span>
+      <span>Acerca de</span>
+    </a>
+  </nav>
+</aside>
+
+<style>
+  #sidebar {
+    width: 260px;
+    min-width: 260px;
+    padding: 1rem 1.2rem 1rem 1rem;
+    background: transparent;
+    border-right: 1px solid rgba(148, 163, 184, 0.24);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .sidebar-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.35rem;
+  }
+
+  .profile-avatar {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    border: 2px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-brand {
+    width: 100%;
+    text-align: left;
+  }
+
+  .site-title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #1f2937;
+  }
+
+  .site-subtitle {
+    margin: 0.35rem 0 0;
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.75rem;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 0.82rem;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: rgba(148, 163, 184, 0.12);
+    color: #0f172a;
+  }
+
+  .nav-icon {
+    width: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 991px) {
+    #sidebar {
+      width: 100%;
+      min-width: 100%;
+      min-height: auto;
+      border-right: none;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+      padding-bottom: 1.2rem;
+    }
+
+    .profile-brand {
+      text-align: center;
+    }
+  }
+</style>
