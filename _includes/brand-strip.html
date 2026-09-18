@@ -1,13 +1,8 @@
 <div class="brand-strip" aria-label="Marca Business Central y Copilot">
   <img
-    src="{{ '/assets/img/business-central-logo.webp' | relative_url }}"
-    alt="Business Central logo"
-    class="brand-strip__logo brand-strip__logo--bc"
-  />
-  <img
-    src="{{ '/assets/img/copilot-logo.png' | relative_url }}"
-    alt="Copilot logo"
-    class="brand-strip__logo brand-strip__logo--copilot"
+    src="{{ '/assets/img/bc_copilot_logo_overlap_transparent.png' | relative_url }}"
+    alt="Business Central y Copilot"
+    class="brand-strip__logo"
   />
 </div>
 
@@ -17,35 +12,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     margin: 0.2rem 0 0.9rem;
     padding: 0;
-    border: none;
+    border: 0;
     background: transparent;
     min-height: 50px;
   }
 
   .brand-strip__logo {
     display: block;
-    width: 50px;
+    width: 100px;
     height: 50px;
     object-fit: contain;
     flex-shrink: 0;
   }
 
-  .brand-strip__logo--bc {
-    width: 50px;
-    height: 50px;
-  }
-
-  .brand-strip__logo--copilot {
-    width: 50px;
-    height: 50px;
-  }
-
   @media (max-width: 768px) {
     .brand-strip {
-      gap: 0.4rem;
       margin-bottom: 0.75rem;
       min-height: 50px;
     }
