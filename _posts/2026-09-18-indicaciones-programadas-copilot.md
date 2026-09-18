@@ -83,6 +83,18 @@ Justo debajo hay una casilla que yo marcaría, al menos al principio: **recibir 
 
 ![Casilla para recibir un correo electrónico cuando la indicación se haya ejecutado](06-notificacion-email.png){: w="900" h="743" .shadow }
 
+## Pruébala a mano antes de dejarla sola
+
+Con la programación ya creada, no hace falta esperar a su primera ejecución para saber si funciona: en el menú de los tres puntos de cada programación tienes **Ejecutar ahora**.
+
+![Menú de los tres puntos de una programación con las opciones Ejecutar ahora, Editar programación, Pausar y Eliminar](09-gestionar-programacion.png){: w="1008" h="648" .shadow }
+*El mismo menú te deja lanzarla a mano, editarla, pausarla o eliminarla.*
+
+> Aquí "funciona" no es solo que se ejecute sin error: es que te devuelva lo que esperas. Y eso da por hecho un trabajo previo —partimos de que la indicación ya la llevas lanzando a mano de forma periódica y tienes comprobado que el resultado es el que quieres—. Programarla no sustituye ese rodaje, solo automatiza cuándo se dispara; si todavía no la tienes depurada, pruébala primero en un chat normal, no en la programación.
+{: .prompt-tip }
+
+En ese mismo menú tienes también **Editar programación**, para ajustarla cuando cambie lo que necesitas, y **Pausar** o **Eliminar**, para cuando deje de aportarte valor.
+
 ## El aviso por correo y el historial
 
 Cuando llega la hora programada, Copilot ejecuta la indicación igual que si la hubieras escrito tú y, si activaste el aviso, te llega un correo como este:
@@ -109,4 +121,5 @@ El de la mañana y el de la imputación son un par de líneas; el de los viernes
 
 1. **Programa solo lo que ya repites de memoria.** Si es un prompt que lanzas con el mismo texto más de una vez por semana, es candidato claro. Si cambia cada vez según lo que necesitas en el momento, no lo programes: perderías precisamente lo que le da valor, que es poder adaptarlo a la situación.
 2. **Activa el aviso por correo al principio, no para siempre.** Te sirve para comprobar que la indicación se ejecuta y para acordarte de que la tienes programada; en cuanto consultar el resultado ya forme parte de tu rutina, puedes desactivarlo.
-3. **Empieza por una sola indicación**, la que más repitas ahora mismo a mano. En cuanto veas el resultado en tu bandeja de entrada un par de veces sin haber movido un dedo, es fácil que te animes a programar la siguiente.
+3. **Pruébala con Ejecutar ahora en cuanto la crees.** Así compruebas que devuelve lo que esperas antes de dejar que se dispare sola.
+4. **Empieza por una sola indicación**, la que más repitas ahora mismo a mano. En cuanto veas el resultado en tu bandeja de entrada un par de veces sin haber movido un dedo, es fácil que te animes a programar la siguiente.
