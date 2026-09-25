@@ -51,7 +51,7 @@ El efecto secundario es que se generaron movimientos contables en periodos que y
 
 Que se registren movimientos con fecha antigua puede pasar por muchos motivos. El problema no es ese, sino que el sistema no esté preparado para absorberlos.
 
-> En un [artículo anterior sobre los rangos de fechas permitidos en Business Central v28](https://danielzafon.github.io/mi-bc-copilot-blog/posts/2026-06-11-rangos-fechas-permitidos-business-central-v28/) vimos herramientas para evitar que se registren movimientos en periodos cerrados: las fórmulas de fecha en los periodos de registro permitidos y la **Fecha de valoración más temprana permitida** para los costes de inventario.
+> En un [artículo anterior sobre los rangos de fechas permitidos en Business Central v28](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/) vimos herramientas para evitar que se registren movimientos en periodos cerrados: las fórmulas de fecha en los periodos de registro permitidos y la **Fecha de valoración más temprana permitida** para los costes de inventario.
 {: .prompt-info }
 
 En este caso, el proceso **Valorar stock - movs. producto** (*Adjust Cost – Item Entries*) llevaba parado desde junio. Es el proceso que calcula el coste real y lo propaga de las entradas a las salidas. Si no se ejecuta, los costes no se ajustan y todo lo que viene después (variación de existencias, cierre de periodos, conciliación con contabilidad) trabaja sobre datos incompletos.
@@ -101,4 +101,14 @@ Funciona en paralelo a los periodos de inventario, y un registro se bloquea si c
 
 El problema no estaba en la herramienta. Como en tantos otros casos, estaba en no entender bien el proceso de costes y en no tener claro qué tiene en cuenta la valoración de existencias y qué no. Antes de tocar el coste de un producto, merece la pena entender qué va a pasar después.
 
-Y esto es solo una parte. En otro artículo te contaré los problemas que más me he encontrado con la valoración de existencias: albaranes y devoluciones de venta o de compra pendientes de facturar, y otros casos que, sin hacer ruido, acaban descuadrando el inventario.
+Y esto es solo una parte. En otro artículo te contaré los problemas que más me he encontrado con la valoración de existencias: albaranes y devoluciones de venta o de compra pendientes de facturar, y otros casos que, sin hacer ruido, acaban descuadrando el inventario. Parte de esto ya lo adelanté en el [artículo sobre devoluciones de venta](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/), donde vimos cómo afectan a la valoración del inventario.
+
+> **Artículos relacionados**
+> - [Controlar rangos de fechas permitidos en Business Central v28 y v28.2](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/)
+> - [Devoluciones de venta en Business Central: por qué desvirtúan tu inventario y cómo evitarlo](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/)
+{: .prompt-info }
+
+> **Documentación de Microsoft**
+> - [Trabajar con periodos de inventario](https://learn.microsoft.com/es-es/dynamics365/business-central/finance-how-to-work-with-inventory-periods)
+> - [Restringir las contabilizaciones de costes retroactivas](https://learn.microsoft.com/es-es/dynamics365/business-central/finance-restrict-backdated-cost-postings)
+{: .prompt-info }
