@@ -103,6 +103,8 @@ El problema no estaba en la herramienta. Como en tantos otros casos, estaba en n
 
 Y esto es solo una parte. En otro artículo te contaré los problemas que más me he encontrado con la valoración de existencias: albaranes y devoluciones de venta o de compra pendientes de facturar, y otros casos que, sin hacer ruido, acaban descuadrando el inventario. Algunos ya los adelanté en el [artículo sobre devoluciones de venta](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/), donde vimos cómo afectan a la valoración del inventario.
 
+*Dedicado a mi compañero Miguel, al que ayudé a revisar todo esto y que ya anticipó que escribiría un artículo sobre ello 😄*
+
 > **Artículos relacionados**
 > - [Controlar rangos de fechas permitidos en Business Central v28 y v28.2](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/)
 > - [Devoluciones de venta en Business Central: por qué desvirtúan tu inventario y cómo evitarlo](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/)
@@ -113,4 +115,3 @@ Y esto es solo una parte. En otro artículo te contaré los problemas que más m
 > - [Restringir las contabilizaciones de costes retroactivas](https://learn.microsoft.com/es-es/dynamics365/business-central/finance-restrict-backdated-cost-postings)
 {: .prompt-info }
 
-*Dedicado a mi compañero Miguel, al que ayudé a revisar todo esto y que ya anticipó que escribiría un artículo sobre ello 😄*
