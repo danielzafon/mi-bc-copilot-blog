@@ -65,7 +65,7 @@ Microsoft recomienda ejecutarlo con la mayor frecuencia posible, fuera del horar
 
 El último periodo de inventario creado terminaba el 31/12/2025 y estaba cerrado. No había ninguno abierto.
 
-Aquí está la clave. Según la documentación de Microsoft, cuando el ajuste de coste genera un movimiento de valor cuya fecha cae en un periodo de inventario cerrado, **lo registra en la fecha de inicio del siguiente periodo abierto**. Pero si no hay ningún periodo abierto al que llevarlos, los movimientos van a su propia fecha, aunque ese periodo esté cerrado.
+Aquí está la clave. Según la documentación de Microsoft, cuando el ajuste de coste genera un movimiento de valor cuya fecha cae en un periodo de inventario cerrado, **lo registra en la fecha de inicio del siguiente periodo abierto**. Pero si no hay ningún periodo abierto al que llevar esos ajustes, van a su propia fecha, aunque ese periodo esté cerrado.
 
 La regla es simple: **cuando cierres un periodo de inventario, crea el siguiente y déjalo abierto.**
 
@@ -101,7 +101,7 @@ Funciona en paralelo a los periodos de inventario, y un registro se bloquea si c
 
 El problema no estaba en la herramienta. Como en tantos otros casos, estaba en no entender bien el proceso de costes y en no tener claro qué tiene en cuenta la valoración de existencias y qué no. Antes de tocar el coste de un producto, merece la pena entender qué va a pasar después.
 
-Y esto es solo una parte. En otro artículo te contaré los problemas que más me he encontrado con la valoración de existencias: albaranes y devoluciones de venta o de compra pendientes de facturar, y otros casos que, sin hacer ruido, acaban descuadrando el inventario. Parte de esto ya lo adelanté en el [artículo sobre devoluciones de venta](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/), donde vimos cómo afectan a la valoración del inventario.
+Y esto es solo una parte. En otro artículo te contaré los problemas que más me he encontrado con la valoración de existencias: albaranes y devoluciones de venta o de compra pendientes de facturar, y otros casos que, sin hacer ruido, acaban descuadrando el inventario. Algunos ya los adelanté en el [artículo sobre devoluciones de venta](https://danielzafon.github.io/mi-bc-copilot-blog/posts/devoluciones-venta-business-central-inventario/), donde vimos cómo afectan a la valoración del inventario.
 
 > **Artículos relacionados**
 > - [Controlar rangos de fechas permitidos en Business Central v28 y v28.2](https://danielzafon.github.io/mi-bc-copilot-blog/posts/rangos-fechas-permitidos-business-central-v28/)
@@ -112,3 +112,5 @@ Y esto es solo una parte. En otro artículo te contaré los problemas que más m
 > - [Trabajar con periodos de inventario](https://learn.microsoft.com/es-es/dynamics365/business-central/finance-how-to-work-with-inventory-periods)
 > - [Restringir las contabilizaciones de costes retroactivas](https://learn.microsoft.com/es-es/dynamics365/business-central/finance-restrict-backdated-cost-postings)
 {: .prompt-info }
+
+*Dedicado a mi compañero Miguel, al que ayudé a revisar todo esto y que ya anticipó que escribiría un artículo sobre ello 😄*
