@@ -152,3 +152,7 @@ Pasar de un agente al que hay que preguntar a uno que actúa solo cuando entra u
 Me queda pendiente la comparativa de costes entre Foundry y Copilot Studio, que te contaré cuando tenga datos suficientes.
 
 Seguramente haya otras formas de hacerlo, y probablemente mejores. Yo estoy explorando esta y te la comparto por si te puede ayudar.
+
+## Enlaces de interés
+
+- [Información general de los flujos de agente en Copilot Studio](https://learn.microsoft.com/es-es/microsoft-copilot-studio/flows-overview)
