@@ -19,7 +19,7 @@ Por el camino, Billie también ha cambiado de casa: ha pasado de ser un agente d
 
 Tenía dos motivos:
 
-- **Explorar los flujos agénticos de Copilot Studio**, todavía en preview. Quería ver qué se puede montar con ellos en un escenario real de soporte.
+- **Explorar los [flujos agénticos de Copilot Studio](https://learn.microsoft.com/es-es/microsoft-copilot-studio/flows-overview)**, una funcionalidad muy reciente. Quería ver qué se puede montar con ellos en un escenario real de soporte.
 - **Comparar costes.** En Azure el agente funciona con pago por uso; en Copilot Studio, con créditos. Tener el mismo agente en ambas plataformas es la forma más fiable de comparar con datos propios cuánto cuesta el mismo volumen de análisis.
 
 Pero el cambio de fondo no es de plataforma, sino de modelo de uso. Hasta ahora el técnico tenía que acordarse de preguntar a Billie. El objetivo ahora es que el agente se ejecute **de forma autónoma cuando el cliente crea un caso**, sin que nadie tenga que pedírselo.
@@ -80,7 +80,7 @@ El flujo arranca con el desencadenante de Dataverse **Cuando se agrega, modifica
 ![Configuración del desencadenante sobre la tabla Casos](04-desencadenante-casos.png){: w="1416" h="820" .shadow }
 *Desencadenante de Dataverse sobre la tabla Casos.*
 
-> Como pasa con muchas funcionalidades en preview, el desencadenante no funciona del todo bien, al menos en mi caso. Si configuro el tipo de cambio solo como **Crear**, el flujo no llega a saltar nunca. Con **Crear o actualizar**, normalmente solo salta al crear el caso, aunque en alguna ocasión lo ha hecho dos veces. Ahora mismo es el menor de mis problemas, pero tenlo en cuenta si montas algo parecido: puedes encontrarte algún caso con el análisis duplicado.
+> Como pasa con muchas funcionalidades recién lanzadas, el desencadenante no funciona del todo bien, al menos en mi caso. Si configuro el tipo de cambio solo como **Crear**, el flujo no llega a saltar nunca. Con **Crear o actualizar**, normalmente solo salta al crear el caso, aunque en alguna ocasión lo ha hecho dos veces. Ahora mismo es el menor de mis problemas, pero tenlo en cuenta si montas algo parecido: puedes encontrarte algún caso con el análisis duplicado.
 {: .prompt-warning }
 
 Después, un nodo **If/Else** decide si el caso es de Business Central. La rama *Si no* termina en *Finalizar - No es BC*.
