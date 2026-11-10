@@ -49,7 +49,7 @@ Tampoco uso las credenciales de cada usuario final: las consultas son siempre la
 
 Antes de tocar Copilot Studio, conviene dejar la base de datos accesible y verificada. Si algo falla aquí, el error aparecerá después en el agente y será mucho más difícil de diagnosticar.
 
-1. **Confirma servidor y base.** En la *Información general* de la base, copia el FQDN completo del servidor (`basedatosagentes.database.windows.net`) y el nombre de la base (`basedatosagente`, casi igual que el servidor, así que cuidado al copiarlos) y comprueba que la base está **Online**. Si es *serverless* y estaba en pausa, espera a que se reanude.
+1. **Confirma servidor y base.** En la *Información general* de la base, copia el FQDN completo del servidor (`<servidor>.database.windows.net`) y el nombre de la base, y comprueba que la base está **Online**. Si es *serverless* y estaba en pausa, espera a que se reanude.
 2. **Configura el administrador de Microsoft Entra.** En el recurso **SQL server** (no en la base), ve a *Configuración → Microsoft Entra ID → Establecer administrador*. Mejor un grupo administrado que una cuenta personal. Sin este paso no podrás crear usuarios de Entra dentro de la base.
 3. **Abre la red para la prueba.** En *Redes*, selecciona **Redes seleccionadas** y activa la excepción **Permitir que los servicios y recursos de Azure accedan a este servidor**.
 
@@ -151,7 +151,7 @@ Si se deja en *Cuenta de usuario final*, a cada usuario se le podría pedir que 
 
 ### Servidor y base fijos
 
-Si dejas el servidor y la base en **Rellenar con IA**, el modelo decide por su cuenta cómo llegar a los datos. En una de las pruebas, con el servidor puesto sin el FQDN (`basedatosagentes`), pedí «lista las facturas» y el agente optó por descubrir primero las bases de datos del servidor:
+Si dejas el servidor y la base en **Rellenar con IA**, el modelo decide por su cuenta cómo llegar a los datos. En una de las pruebas, con el servidor puesto solo con su nombre corto, sin `.database.windows.net`, pedí «lista las facturas» y el agente optó por descubrir primero las bases de datos del servidor:
 
 ![Panel de prueba de Copilot Studio con timeout al intentar listar las bases de datos](05-timeout-list-databases.png){: w="1011" h="785" .shadow }
 *El agente llama a List the databases con el nombre corto del servidor y la operación acaba en timeout a los 60 segundos.*
@@ -163,7 +163,7 @@ La solución es quitarle esa decisión. En **Entradas**, cambia **Nombre del ser
 
 Dos detalles:
 
-- Usa siempre el nombre completo `*.database.windows.net`, nunca solo `basedatosagentes`.
+- Usa siempre el nombre completo `*.database.windows.net`, nunca solo el nombre corto del servidor.
 - El aviso *No se han podido cargar las opciones* no impide escribir el nombre de la base a mano.
 
 ## Fase D: la consulta y las pruebas
@@ -201,7 +201,7 @@ La descripción de la herramienta es lo que lee el modelo para decidir cuándo u
 
 ```text
 Ejecuta una consulta SQL de solo lectura y previamente definida sobre
-la base basedatosagente. Úsala únicamente para consultar facturas
+la base <nombre-de-la-base>. Úsala únicamente para consultar facturas
 cuando estén disponibles los parámetros obligatorios. No inventes
 servidor, base, tablas ni SQL alternativo.
 ```
